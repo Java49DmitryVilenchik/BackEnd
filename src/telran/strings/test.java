@@ -17,6 +17,8 @@ class test {
 	void compartTo() {
 		assertEquals(0, StringTests.compartTo("I Love Java", "I Love Java"));
 		assertEquals(1, StringTests.compartTo("Java", "I Love Java"));
+		assertEquals('H'-'h', StringTests.compartTo("Hello", "hello"));
+		
 	}
 	@Test
 	void compareToIgnoreCase() {
@@ -40,6 +42,7 @@ class test {
 	void contains() {
 		assertTrue(StringTests.contains("Hello", "llo"));
 		assertFalse(StringTests.contains("Hello", "Ma"));
+		assertTrue(StringTests.contains("", ""));
 	}
 	@Test
 	void indexOf() {
