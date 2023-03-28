@@ -92,7 +92,7 @@ class MyArraysTests {
 		//TODO
 		//write tests for method binarySearch taking array of int and int number
 		int array[]= {5,-11, 2,10,-40};
-		int key=5;
-		assertTrue(MyArraysIn.binarySearch(array, key)==1);
+		int key=11111;
+		assertTrue(MyArraysIn.binarySearch(array, key)==-1);
 	}
 }
