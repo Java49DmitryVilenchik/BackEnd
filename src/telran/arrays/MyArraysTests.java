@@ -94,5 +94,9 @@ class MyArraysTests {
 		int array[]= {5,-11, 2,10,-40};
 		int key=11111;
 		assertTrue(MyArraysIn.binarySearch(array, key)==-1);
+		
+		key=-11;
+		assertTrue(MyArraysIn.binarySearch(array, key)==1);
+		
 	}
 }

@@ -48,9 +48,6 @@ public class MyArraysIn {
 
 	public static int binarySearch(int[] array, int key) {
 		Arrays.sort(array);
-		if (Arrays.binarySearch(array, key) >= 0)
-			return 1;
-		else
-			return -1;
+		return Arrays.binarySearch(array, key) >= 0 ? 1 : -1;
 	}
 }
